@@ -882,6 +882,7 @@ function calculateQuote() {
     const service = document.getElementById('calc-service').value;
     const weight = parseFloat(document.getElementById('calc-weight').value) || 0;
     const distance = parseFloat(document.getElementById('calc-distance').value) || 0;
+    const items = parseFloat(document.getElementById('calc-items').value) || 1;
     const fragile = document.getElementById('calc-fragile').checked;
     const result = document.getElementById('calc-result');
     const priceValue = result.querySelector('.price-value');
@@ -921,7 +922,7 @@ function calculateQuote() {
             return;
     }
     
-    let totalCost = baseRate + (weight * weightMultiplier) + (distance * distanceMultiplier);
+    let totalCost = baseRate + (weight * weightMultiplier) + (distance * distanceMultiplier) + ((items - 1) * 5);
     
     if (fragile) {
         totalCost *= 1.25; // 25% surcharge for fragile items
