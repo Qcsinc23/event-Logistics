@@ -1,0 +1,37 @@
+{
+  "name": "quiet-craft-solutions",
+  "version": "1.0.0",
+  "description": "Professional event logistics courier service website for Quiet Craft Solutions Inc.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "event-logistics",
+    "courier-service",
+    "delivery",
+    "conference-logistics",
+    "trade-show",
+    "festival-courier",
+    "time-critical-delivery"
+  ],
+  "author": "Quiet Craft Solutions Inc.",
+  "license": "MIT",
+  "homepage": "https://github.com/Qcsinc23/event-Logistics#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qcsinc23/event-Logistics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qcsinc23/event-Logistics/issues"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
