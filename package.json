@@ -7,7 +7,8 @@
     "dev": "npx serve .",
     "build": "echo 'Static site - no build required'",
     "start": "npx serve .",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "install": "npm install"
   },
   "keywords": [
     "event-logistics",
